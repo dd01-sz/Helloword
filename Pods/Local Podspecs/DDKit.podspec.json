@@ -1,0 +1,224 @@
+{
+  "name": "DDKit",
+  "version": "0.6.5",
+  "summary": "private extensions for uikit in swift.",
+  "description": "hk01 private uikit frameworks in swift.",
+  "homepage": "https://github.com/hk01-digital",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Samuel Ying": "xiaoleiyin@hk01.com"
+  },
+  "source": {
+    "git": "https://github.com/hk01-digital/dd01-ios-ui-kit.git",
+    "tag": "0.6.5",
+    "submodules": true
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_version": "4.0",
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "DDKit/Core/*"
+    },
+    {
+      "name": "Toast",
+      "source_files": "DDKit/Toast/*",
+      "dependencies": {
+        "PKHUD": [
+
+        ],
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Alert",
+      "source_files": "DDKit/Alert/*"
+    },
+    {
+      "name": "Sheet",
+      "source_files": "DDKit/Sheet/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "Route",
+      "source_files": "DDKit/Route/*",
+      "dependencies": {
+        "DDKit/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "PhotoBrowser",
+      "source_files": "DDKit/PhotoBrowser/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ],
+        "Kingfisher": [
+
+        ],
+        "MBProgressHUD": [
+
+        ]
+      }
+    },
+    {
+      "name": "Pop",
+      "source_files": "DDKit/Pop/Classes/*",
+      "resources": "DDKit/Pop/Assets/*"
+    },
+    {
+      "name": "Refresh",
+      "source_files": "DDKit/Refresh/*",
+      "dependencies": {
+        "MJRefresh": [
+
+        ]
+      }
+    },
+    {
+      "name": "Hud",
+      "source_files": "DDKit/Hud/*",
+      "dependencies": {
+        "MBProgressHUD": [
+
+        ]
+      }
+    },
+    {
+      "name": "DDRequest",
+      "source_files": "DDKit/DDRequest/*",
+      "dependencies": {
+        "Alamofire": [
+
+        ],
+        "PromiseKit": [
+
+        ],
+        "Cache": [
+
+        ]
+      }
+    },
+    {
+      "name": "Codables",
+      "source_files": "DDKit/Codables/*"
+    },
+    {
+      "name": "WebJS",
+      "source_files": "DDKit/WebJS/*"
+    },
+    {
+      "name": "DDVideoPlayer",
+      "source_files": "DDKit/DDVideoPlayer/Class/*",
+      "resources": "DDKit/DDVideoPlayer/Asset/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ],
+        "Alamofire": [
+
+        ]
+      }
+    },
+    {
+      "name": "DDPhotoPicker",
+      "source_files": "DDKit/DDPhotoPicker/Classes/*",
+      "resources": "DDKit/DDPhotoPicker/Assets/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "DDPhotoBrowser",
+      "source_files": "DDKit/DDPhotoBrowser/Classes/*",
+      "resources": "DDKit/DDPhotoBrowser/Assets/*",
+      "dependencies": {
+        "Kingfisher": [
+
+        ]
+      }
+    },
+    {
+      "name": "DDCustomCamera",
+      "source_files": "DDKit/DDCustomCamera/Classes/*",
+      "resources": "DDKit/DDCustomCamera/Assets/*",
+      "dependencies": {
+        "DDKit/DDPhotoPicker": [
+
+        ]
+      }
+    },
+    {
+      "name": "DDScan",
+      "source_files": "DDKit/DDScan/Classes/*",
+      "resources": "DDKit/DDScan/Assets/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "DDMediator",
+      "source_files": "DDKit/DDMediator/*"
+    },
+    {
+      "name": "DDRouter",
+      "source_files": "DDKit/DDRouter/*"
+    },
+    {
+      "name": "MagicTextField",
+      "source_files": "DDKit/MagicTextField/*"
+    },
+    {
+      "name": "EmptyDataView",
+      "source_files": "DDKit/EmptyDataView/Classes/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ]
+      }
+    },
+    {
+      "name": "DevelopConfig",
+      "source_files": "DDKit/DevelopConfig/*",
+      "dependencies": {
+        "SnapKit": [
+
+        ],
+        "AFNetworking/Reachability": [
+
+        ]
+      }
+    },
+    {
+      "name": "PageTabsController",
+      "source_files": "DDKit/PageTabsController/*"
+    },
+    {
+      "name": "Picker",
+      "source_files": "DDKit/Picker/*",
+      "dependencies": {
+        "ActionSheetPicker-3.0": [
+
+        ]
+      }
+    }
+  ]
+}
